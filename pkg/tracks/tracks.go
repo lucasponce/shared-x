@@ -2,6 +2,7 @@ package tracks
 
 import "fmt"
 
+var VERSION = "v0.0"
 var TRACKS = make(map[string]string)
 
 func AddTrack(id string, content string) {
@@ -13,5 +14,10 @@ func RemoveTrack(id string) {
 }
 
 func DumpTracks() {
-	fmt.Println(TRACKS)
+	fmt.Printf("VERSION: %s TRACKS:\n", VERSION)
+	fmt.Println("-----------------------")
+	for k, v := range TRACKS {
+		fmt.Printf("%s: %s\n", k, v)
+	}
+
 }
