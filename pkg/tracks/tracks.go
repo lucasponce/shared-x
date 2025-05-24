@@ -2,7 +2,7 @@ package tracks
 
 import "fmt"
 
-var VERSION = "v2.0"
+var VERSION = "v3.0"
 var TRACKS = make(map[string]string)
 
 func AddTrack(id string, content string) {

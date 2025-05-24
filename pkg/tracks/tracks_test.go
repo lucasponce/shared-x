@@ -12,8 +12,8 @@ func TestTracks(t *testing.T) {
 
 	version := GetVersion()
 
-	if version != "v2.0" {
-		t.Errorf("Version %s, want %s", version, "v2.0")
+	if version != "v3.0" {
+		t.Errorf("Version %s, want %s", version, "v3.0")
 	}
 
 	tracks := GetTracks()
